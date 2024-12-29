@@ -52,15 +52,15 @@
     </header>
      <main>
         <!-- popup section -->
-        <section class="hidden bg-[#36333390] pt-40 mt-[-100px] z-50 fixed w-full h-full">
+        <section id="popUP" class="  bg-[#36333390] pt-40 mt-[-100px] z-50 fixed w-full h-full">
             <div id="congrates" class="  
             w-2/4 bg-white rounded-lg mx-auto  p-4">
                <div><h1 class="text-2xl my-4">Congrates!</h1></div>
                <img src="assets/coin.png" alt="">
                <p>You Have Donated for Humankind</p>
                <h2 class="text-xl my-2">Successfully</h2>
-               <button class="bg-[#bfbfbf] rounded-lg
-               p-2">cose confirmation</button>
+               <button id="close-Cnf" class="bg-[#bfbfbf] rounded-lg
+               p-2">close confirmation</button>
             </div>
           </section>
          <!-- end popup section -->
@@ -74,7 +74,7 @@
                 <div class="flex bg-gray-300 lg:mt-0 my-8 w-2/6 rounded-lg
                  p-2 items-center gap-1">
                     <img src="assets/coin.png" alt="">
-                    <h1>0</h1>
+                    <h1 id="my-blance1">2345</h1>
                     <h1>BDT</h1>
                 </div>
                 <div>
@@ -87,10 +87,10 @@
                           makes  difference. Please join us in supporting 
                           the relief efforts and making a positive impact
                            on the lives of those in need.</p>
-                    <input class="border-2 w-full p-1 my-2 rounded-lg"
+                    <input id="donat-amnt" class="border-2 w-full p-1 my-2 rounded-lg"
                      type="text" placeholder="write Donation Amount">
                     <div>
-                        <button class="bg-[#B4F461] rounded-lg
+                        <button id="donateBtn" class="bg-[#B4F461] rounded-lg
                         px-4 py-2 my-6 lg:mb-0 text-lg font-bold w-full">Donate Now</button>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                  <div class="flex bg-gray-300 lg:mt-0 my-8 w-2/6 rounded-lg
                   p-2 items-center gap-1">
                      <img src="assets/coin.png" alt="">
-                     <h1>0</h1>
+                     <h1 id="my-amnt2">32434</h1>
                      <h1>BDT</h1>
                  </div>
                  <div>
@@ -124,10 +124,10 @@
                             difference. Please consider donating 
                         today to assist those in urgent need.
                     </p>
-                     <input class="border-2 w-full p-1 my-2 rounded-lg"
+                     <input id="donat-amnt2" class="border-2 w-full p-1 my-2 rounded-lg"
                       type="text" placeholder="write Donation Amount">
                      <div>
-                         <button class="bg-[#B4F461] rounded-lg
+                         <button id="donateBtn2" class="bg-[#B4F461] rounded-lg
                          px-4 py-2 my-6 lg:mb-0 text-lg font-bold w-full">Donate Now</button>
                      </div>
                  </div>
@@ -143,7 +143,7 @@
                    <div class="flex bg-gray-300 lg:mt-0 my-8 w-2/6 rounded-lg
                     p-2 items-center gap-1">
                        <img src="assets/coin.png" alt="">
-                       <h1>0</h1>
+                       <h1 id="my-blance3">2430</h1>
                        <h1>BDT</h1>
                    </div>
                    <div>
@@ -164,10 +164,10 @@
                              making a donation to support these brave 
                         individuals in their time of need.
                     </p>
-                       <input class="border-2 w-full p-1 my-2 rounded-lg"
+                       <input id="donat-amnt3" class="border-2 w-full p-1 my-2 rounded-lg"
                         type="text" placeholder="write Donation Amount">
                        <div>
-                           <button class="bg-[#B4F461] rounded-lg
+                           <button id="donateBtn3" class="bg-[#B4F461] rounded-lg
                            px-4 py-2 my-6 lg:mb-0 text-lg font-bold w-full">Donate Now</button>
                        </div>
                    </div>
@@ -180,6 +180,8 @@
  
     <!-- js link -->
     <script src="fetures.js"></script>
+    <script src="popup.js"></script>
+    <script src="donate.js"></script>
 
      <!-- end -->
 </body>
