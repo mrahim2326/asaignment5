@@ -22,11 +22,13 @@ document.getElementById('donateBtn')
         const div=document.createElement('div');
         div.classList.add('bg-gray-300');
         div.innerHTML=`
+        <div class="border-2
+           p-5 my-5">
         <h2 class="text-lg font-bold">Donate for flood noakali:</h2>
         <p  class="text-lg font-bold">
          Subtraction:: ${updatedBalance1} <span class="text-orange-600">TK</span>
            New-With-Add:: ${updatedBalance2} <span class="text-orange-600">TK</span></p>
-
+          </div>
         `
         document.getElementById('history-ftr').appendChild(div);
       } 
@@ -61,13 +63,15 @@ document.getElementById('donateBtn2')
         document.getElementById('donat-amnt2').value = '';
 
         const div=document.createElement('div');
-        div.classList.add('bg-gray-200');
+        div.classList.add('bg-gray-300');
         div.innerHTML=`
+        <div class="border-2
+           p-5 my-5">
         <h2 class="text-lg font-bold">Donate for flood Feni:</h2>
         <p  class="text-lg font-bold">
          Subtraction:: ${updatedBalance1}  <span class="text-orange-600">TK</span>
            New-With-Add:: ${updatedBalance2}  <span class="text-orange-600">TK</span></p>
-
+          </div>
         `
         document.getElementById('history-ftr').appendChild(div);
       } else {
@@ -103,7 +107,7 @@ document.getElementById('donateBtn2')
         div.classList.add('bg-gray-300');
         div.innerHTML=`
         <div class="border-2
-           p-5 my-5 rounded-lg">
+           p-5 my-5">
         <h2 class="text-lg font-bold">Aid for Quota Movement:</h2>
 
         <h4>
