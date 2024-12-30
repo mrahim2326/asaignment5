@@ -16,12 +16,25 @@ document.getElementById('donateBtn')
         const balance2 = parseFloat(balance2Element.textContent);
         const updatedBalance2 = balance2 + inputAmount;
 
-        balance2Element.textContent = updatedBalance2.toFixed(2);
+        document.getElementById('main-balance').innerText=updatedBalance2;
         document.getElementById('donat-amnt').value = '';
-      } else {
+
+        const div=document.createElement('div');
+        div.classList.add('bg-gray-300');
+        div.innerHTML=`
+        <h2 class="text-lg font-bold">Donate for flood noakali:</h2>
+        <p  class="text-lg font-bold">
+         Subtraction:: ${updatedBalance1} <span class="text-orange-600">TK</span>
+           New-With-Add:: ${updatedBalance2} <span class="text-orange-600">TK</span></p>
+
+        `
+        document.getElementById('history-ftr').appendChild(div);
+      } 
+      else {
         alert('Balance 1 cannot go negative!');
       }
-    } else {
+    } 
+    else {
       alert('Please enter a valid positive number!');
     }
   });
@@ -44,8 +57,19 @@ document.getElementById('donateBtn2')
         const balance2 = parseFloat(balance2Element.textContent);
         const updatedBalance2 = balance2 + inputAmount;
 
-        balance2Element.textContent = updatedBalance2.toFixed(2);
+        document.getElementById('main-balance').innerText=updatedBalance2;
         document.getElementById('donat-amnt2').value = '';
+
+        const div=document.createElement('div');
+        div.classList.add('bg-gray-200');
+        div.innerHTML=`
+        <h2 class="text-lg font-bold">Donate for flood Feni:</h2>
+        <p  class="text-lg font-bold">
+         Subtraction:: ${updatedBalance1}  <span class="text-orange-600">TK</span>
+           New-With-Add:: ${updatedBalance2}  <span class="text-orange-600">TK</span></p>
+
+        `
+        document.getElementById('history-ftr').appendChild(div);
       } else {
         alert('Balance 1 cannot go negative!');
       }
@@ -72,12 +96,29 @@ document.getElementById('donateBtn2')
         const balance2 = parseFloat(balance2Element.textContent);
         const updatedBalance2 = balance2 + inputAmount;
 
-        balance2Element.textContent = updatedBalance2.toFixed(2);
+        document.getElementById('main-balance').innerText=updatedBalance2;
         document.getElementById('donat-amnt3').value = '';
-      } else {
+
+        const div=document.createElement('div');
+        div.classList.add('bg-gray-300');
+        div.innerHTML=`
+        <div class="border-2
+           p-5 my-5 rounded-lg">
+        <h2 class="text-lg font-bold">Aid for Quota Movement:</h2>
+
+        <h4>
+         Subtraction:: ${updatedBalance1} <span class="text-orange-600">TK</span>
+         New-With-Add:: ${updatedBalance2}  <span class="text-orange-600">TK</span></h4>
+         </div>
+
+        `
+        document.getElementById('history-ftr').appendChild(div);
+      } 
+      else {
         alert('Balance 1 cannot go negative!');
       }
-    } else {
+    } 
+    else {
       alert('Please enter a valid positive number!');
     }
   });

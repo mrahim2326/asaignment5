@@ -11,7 +11,8 @@ document.getElementById('history').addEventListener('click',
     document.getElementById('history').style.backgroundColor="#B4F461";
     document.getElementById('donation').style.border="1px grey solid";
     document.getElementById('history').style.border="none";
-
+    document.getElementById('main-section').style.display="none";
+    document.getElementById('footer-setion').style.display="block";
 
 })             
 document.getElementById('donation').addEventListener('click',
@@ -20,11 +21,8 @@ document.getElementById('donation').addEventListener('click',
     document.getElementById('donation').style.backgroundColor="#B4F461";
     document.getElementById('history').style.border="1px grey solid";
     document.getElementById('donation').style.border="none";
+    document.getElementById('footer-setion').style.display="none";
+    document.getElementById('main-section').style.display="block";
 
 })
-// donate money
-// function getInputFieldValueById(){
-//     console.log('will');
-//     const addMoney=document.getElementById('donat-amnt2').ariaValueMax;
-//     return addMoney;
-// }
+
